@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Times Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="header">
+        <h1>
+            Times Table Generator
+        </h1>
+    </div>
+
+    <div id="main">
+        <div id="timescontainer">
+            <!-- This is where the times tables will go -->
+        </div>
+
+        
+    </div>
+
+
+    <div id="footer">
+        <div class="labelandinput">
+            <label for="mainnumber">Multiply</label>
+            <input type="number" id="mainnumber" required>
+        </div>
+
+        <div class="labelandinput">
+            <label for="maxmultiplier">Up to</label>
+            <input type="number" id="maxmultiplier" required> times
+        </div>
+
+        <button id="calcbutton">Calculate</button>
+
+        <button id="removebutton" class="removebutton">Remove All</button>
+    </div>
+    <script src="times_table.js"></script>
+</body>
+</html>

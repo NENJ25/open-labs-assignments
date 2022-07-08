@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Jost:wght@100;400&family=Patrick+Hand&family=Rochester&family=Elsie&family=Open+Sans&family=Raleway:wght@100;200;300;400&display=swap");
+
+body{
+    margin: 0;
+}
+
+#header{
+    background-color: #f6f5f5;
+    padding: 0.5%;
+    text-align: center;
+    top: 0;
+    margin-top: 0;
+}
+
+#main{
+    text-align: center;
+}
+
+#header h1{
+    font-family: "Patrick Hand", cursive;
+    margin: 0.4em;
+    text-transform: uppercase;
+    color: #53A2BE;
+    animation-name: colorChange;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorChange {
+    0% {color: #53A2BE}
+    16.67% {color: #F6BD60}
+    33.34% {color: #F7EDE2}
+    50% {color: #F5CAC3}
+    71.425% {color: #84A59D}
+    85.71% {color: #F28482}
+    100% {color: #53A2BE}
+}
+.labelandinput{
+    display: inline-block;
+}
+
+.tablecontainers{
+    display:inline-block;
+    width: 15%;
+    text-align: center;
+    margin: 3% 3% 0 3%;
+    border-radius: 15px;
+}
+
+.tablecontainers:hover{
+    width: 17%;
+    box-shadow:  5px 5px 10px #d4d4d4,
+                   -5px -5px 5px #d4d4d4;
+}
+
+.tablecontainers h2{
+    font-family: "Patrick Hand", cursive;
+    display: inline-block;
+    font-size: 3em;
+    border-radius: 50%;
+    padding: 4% 0;
+    width: 40%;
+    margin: 2% auto 1% auto;
+}
+
+.tables{
+    font-family: "Patrick Hand", cursive;
+    margin: 0 auto;
+    font-size: 1.7em;
+    width: 100%;
+}
+
+.labelandinput{
+    font-family: "Patrick Hand", cursive;
+    font-size: 1.5em;
+}
+
+input{
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+input:focus{
+    outline: none;
+    border: 3px solid #D60849;
+}
+
+td{
+    padding: 0 2%;
+}
+
+.remove_{
+    font-family: "Patrick Hand", cursive;
+    font-size: 1.2em;
+    background-color: white;
+    border: none;
+}
+
+.remove_:hover{
+    text-decoration:  underline rgb(164, 163, 163);
+}
+
+#calcbutton{
+    /* display: block; */
+    font-family: "Patrick Hand", cursive;
+    font-size: 1.5em;
+    border: none;
+    background-color: #D60849;
+    color: white;
+    margin: 1%;
+    border-radius: 15px;
+}
+
+#footer{
+    background-color: #f6f5f5;
+    padding: 0.5%;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+#removebutton{
+    display: block;
+    margin: auto;
+    font-family: "Patrick Hand", cursive;
+    background-color: #f6f5f5;
+    border: none;
+    color: #D60849;
+    font-size: 1.5em;
+}
+
+#removebutton:hover{
+    text-decoration:  underline #D60849;
+}
+
+
+
+@media screen and (max-width: 920px){
+    .tablecontainers{
+        width: 30%
+    }
+}
+
+@media screen and (max-width: 500px){
+    .tablecontainers{
+        width: 60%
+    }
+}
