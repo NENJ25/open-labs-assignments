@@ -1,0 +1,47 @@
+<!DOCTYPE html5>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>Employee Registration Form</h1>
+        <img src="employee.jpg" height="300px" weight="300px" alt="Female employee holding a tablet">
+
+        <form method="post" action="" id="employeeform">
+            <table>
+                <tr><td><label for="fname">First Name</label></td><td><input type="text" id="fname" placeholder="Adjoa"></td></tr>
+                <tr><td><label for="lname">Last Name</label></td><td><input type="text" id="lname" placeholder="Opoku"></td></tr>
+                <tr><td><label for="dob">Date of Birth</label></td><td><input type="date" id="dob"></td></tr>
+                <tr><td><label for="mstatus">Marital Status</label></td><td><select id="mstatus">
+                    <option value="blank">---</option>
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="cpartnership">Civil Partnerhsip</option>
+                    <option value="divorced">Divorced</option></select>
+                </td></tr>
+                <tr><td><label for="email">Email</label></td><td><input type="email" id="email" placeholder="aopoku@xx.com"></td></tr>
+                <tr><td><label for="pnumber">Phone Number</label></td><td><input type="number" id="pnumber" placeholder="0123456789"></td></tr>
+                <tr><td><label for="password">Password</label></td><td><input type="password" id="password"></td></tr>
+                <tr><td><label for="female">Female</label><input type="radio" name="gender" id="female"></td>
+                    <td><label for="male">Male</label><input type="radio" name="gender" id="male">
+                    <label for="other">   Other</label><input type="radio" name="gender" id="other"></td>
+                </tr>
+                <tr><td><label for="bio">Biography</label></td><td><textarea id="bio" placeholder="Akosua Opoku has been at XXXX for XXX" rows="2" cols="35"></textarea> </td></tr>
+                <tr><td>Languages</td>
+                    <td><label for="english">English</label><input type="checkbox" name="english" id="english">
+                    <label for="twi">Twi</label><input type="checkbox" name="twi" id="twi">
+                    <label for="ga">Ga</label><input type="checkbox" name="ga" id="ga">
+                    <label for="ewe">Ewe</label><input type="checkbox" name="ewe" id="ewe">
+                    <label for="hausa">Hausa</label><input type="checkbox" name="hausa" id="hausa">
+                </td></tr>
+                <tr><td><input type="button" value="Submit"></td></tr>
+            </table>
+        </form>
+    </body>
+</html>
